@@ -10,8 +10,6 @@ $> docker pull eosio/eos-dev
 $> mkdir container container\work container\data container\config
 
 $> docker run --rm --name eosio -d -p 8888:8888 -p 9876:9876 -v %cd%/container/work:/work -v %cd%/container/data:/mnt/dev/data -v %cd%/container/config:/mnt/dev/config eosio/eos-dev  /bin/bash -c "nodeos -e -p eosio --plugin eosio::wallet_api_plugin --plugin eosio::wallet_plugin --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:8888 --access-control-allow-origin=* --contracts-console"
-
-$> docker run --rm --name eosio -d -p 8888:8888 -p 9876:9876 -v /tmp/work:/work -v /tmp/eosio/data:/mnt/dev/data -v /tmp/eosio/config:/mnt/dev/config eosio/eos-dev  /bin/bash -c "nodeos -e -p eosio --plugin eosio::wallet_api_plugin --plugin eosio::wallet_plugin --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:8888 --access-control-allow-origin=* --contracts-console"
 ```
 
 > I took the command from [EOS Docker Quickstart](https://developers.eos.io/eosio-nodeos/docs/docker-quickstart) and modify it for windows. If you encounter an error, please check [this github issue](https://github.com/docker/for-win/issues/1038).
