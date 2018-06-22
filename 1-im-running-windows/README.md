@@ -1,6 +1,6 @@
-# Chapter #1: 🔳 I'm Running Windows
+# Chapter #1: I'm Running Windows 🙀
 
-Every single time a new open source software is built, it'd be for unix-like systems. But hey, I'm running windows 10. So what do I do now?
+Despite being so popular among average users and games, Windows is perhaps the worst OS for developers. Every single time a new open source software is built, it'd be for unix-like systems. But hey, I'm running Windows 10 and I'm not gonna change it. So what do I do?
 
 Luckily for us, the EOS developer team is sympathetic enough to ship the entire package with docker. Great job guys! All we need are [Docker](https://store.docker.com/search?type=edition&offering=community) and a couple of commands:
 
@@ -20,11 +20,11 @@ With the commands above, here're what we have accomplished:
 
 1.  Create folder `container`, which we will map to directories in EOS docker in step 2.
 2.  Run the `eosio/eos-dev` container with these options
-    a. Tunnel port 8888 and 9876 from docker to host machine
-    b. Map host's `container\work` to docker's `/work`
-    c. Map host's `container\data` to docker's `/mnt/dev/data`
-    d. Map host's `container\config` to docker's `/mnt/dev/config`
-    e. Runs `nodeos -e -p ...` in docker with `/bin/bash`
+    - Tunnel port 8888 and 9876 from docker to host machine
+    - Map host's `container\work` to docker's `/work`
+    - Map host's `container\data` to docker's `/mnt/dev/data`
+    - Map host's `container\config` to docker's `/mnt/dev/config`
+    - Runs `nodeos -e -p ...` in docker with `/bin/bash`
 
 Now let's verify that we have the node running by visiting `http://localhost:8888/v1/chain/get_info`. It'd probably says something like this:
 
