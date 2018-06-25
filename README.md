@@ -4,5 +4,5 @@ This is a repo I create purely for experimenting with EOS blockchain ecosystem. 
 
 ## Table of Contents
 
-[Chapter #1: I'm Running Windows 🙀](1-im-running-windows)
-[Chapter #1.5: EOS-Local NPM Module](https://github.com/smiled0g/eos-local)
+- [Chapter #1: I'm Running Windows 🙀](1-im-running-windows)
+- [Chapter #1.5: EOS-Local NPM Module](https://github.com/smiled0g/eos-local)
