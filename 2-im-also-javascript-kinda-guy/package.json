@@ -1,0 +1,19 @@
+{
+  "name": "paul-eos-chapter-2",
+  "version": "1.0.0",
+  "description": "EOS x Javascript = Fun",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "EOS",
+    "Blockchain",
+    "dApp"
+  ],
+  "author": "Paul Chonpimai <paul@bandprotocol.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eosjs": "^15.0.3"
+  }
+}
